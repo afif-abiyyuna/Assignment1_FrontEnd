@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Hunter'sPedia</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="/layout/styles/about.css" />
+</head>
+<body id="top">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <div class="fl_left">
+      <ul class="faico clear" onclick="confirmation()">
+        <li><a class="faicon-facebook" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-instagram" href="http://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="faicon-pinterest" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+        <li><a class="faicon-twitter" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-linkedin" href="http://www.linked.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="http://www.google.com"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-youtube" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="bgded overlay" style="background-image:url('/images/header.png');"> 
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <div id="logo" class="fl_left">
+        <h1><a href="/index.html">Hunter'sPedia</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="/index.html">Home</a></li>
+          <li><a href="/pages/gallery.html">Gallery</a></li>
+          <li><a class="drop" href="/pages/Post1.html">Post</a>
+            <ul>
+              <li><a href="#">Environtments</a></li>
+              <li><a class="drop" href="#">Monster Category</a>
+                <ul>
+                  <li><a href="#">Elder Dragon</a></li>
+                  <li><a href="#">Wyvern</a></li>
+                  <li><a href="#">Leviathan</a></li>
+                  <li><a href="#">Relict</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Weapons</a></li>
+            </ul>
+          </li>
+          <li><a href="/pages/AboutUS.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <div class="content"> 
+      <h1 style="font-size: 35px;">About Us</h1>
+      <img src="/images/cover about us.jpg" alt="">
+      <div class="about-section">
+        <h1>Introduce Our Team</h1>
+        <p>Some introducion about who we are and what we do.</p>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/images/jimmy.jpg" alt="jimmy" style="width:100%">
+          <div class="container">
+            <h2>Jimmy Neutron</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Learn, Learn, and Learn</p>
+            <p>jimmyN@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/images/spongebob.jpg" alt="spongebob" style="width:100%">
+            <div class="container">
+              <h2>Spongebob Squarepants</h2>
+              <p class="title">Front-End Developer</p>
+              <p>Playing, Playing, and Playing</p>
+              <p>spongebobS@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+      </div>
+        <div class="column">
+          <div class="card">
+            <img src="/images/arnold.jpg" alt="Arnold" style="width:100%">
+            <div class="container">
+              <h2>Hey Arnold</h2>
+              <p class="title">Back-End Developer</p>
+              <p>Life is Life, no matter what</p>
+              <p>H.arnold@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <hr>
+    <h2>Contact Us</h2>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <form action="/pages/AboutUS.html" onsubmit="validation()" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="">Country</option>
+              <script>
+              var country = ["Indonesia", "Malaysia", "Thailand", "Filiphine", "Singapore", "Laos", "Australia", "USA", "China", "Brunei", "Kamboja", "India"];
+              for(i=0;i<=11;i++){document.write("<option>" + country[i] + "</option>");}
+              </script>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <button class="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </main>
+</div>
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_quarter first">
+      <h6 class="title">Contact Us</h6>
+      <address class="btmspace-30">
+      Karangmulyo, Tambakromo<br>
+      Pati, Jawa Tengah<br>
+      Kode pos : 59174
+      </address>
+      <ul class="nospace">
+        <li class="btmspace-10"><i class="fa fa-phone"></i> +6281931671209</li>
+        <li><i class="fa fa-envelope-o"></i> saswordzect@yahoo.co.id</li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">About Us</h6>
+      <article>
+        <h2 class="nospace font-x1"><a href="#">Hunter'sPedia made on</a></h2>
+        <time class="font-xs" datetime="2020-04-06">Friday, 6<sup>th</sup> April 2020</time>
+        <p>Hunter'sPedia is made by fans of the monster hunter game who are interested in writing all the information in the game.</p>
+      </article>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Source Information</h6>
+      <ul class="nospace linklist">
+        <li><a href="http://www.google.com">Google</a></li>
+        <li><a href="http://www.youtube.com">Youtube</a></li>
+        <li><a href="http://www.wikipedia.com">Wikipedia</a></li>
+        <li><a href="http://monsterhunter.fandom.com">Fandom</a></li>
+        <li><a href="http://www.monsterhunterworld.com">Monster Hunter Games</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Subscribe US</h6>
+      <input type="text" placeholder="Name" name="name" required>
+      <br>
+      <input type="text" placeholder="Email address" name="mail" required>
+      <label>
+          <input type="checkbox" checked="checked" name="subscribe">Daily Newsletter 
+      </label>
+          <br>
+          <button class="button" onclick="notification()">Subscribe</button>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="/index.html">Hunter'sPedia</a></p>
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/layout/scripts/jquery.backtotop.js"></script>
+<script src="/layout/scripts/jquery.mobilemenu.js"></script>
+<script src="/layout/scripts/notification.js"></script>
+<script src="/layout/scripts/validationcontact.js"></script>
+<script src="/layout/scripts/notifikasigone.js"></script>
+</body>
+</html>
